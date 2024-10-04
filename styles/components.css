@@ -121,7 +121,7 @@ to the screen, not to the space below the header
 nav, .nav-links {
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 a {
@@ -130,9 +130,9 @@ a {
 }
 
 a:hover {
-    color {
-
-    }
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
 }
 
 .contact-icon-container {
