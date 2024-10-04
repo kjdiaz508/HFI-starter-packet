@@ -37,7 +37,7 @@
     .container {
         max-width: 640px;
     }
-    main {
+    main.bento-layout{
         grid-template-columns: 1fr;
         grid-template-areas: 
             "bio"

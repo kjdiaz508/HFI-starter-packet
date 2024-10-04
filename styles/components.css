@@ -96,6 +96,10 @@ to the screen, not to the space below the header
     line-height: 1.5;
 }
 
+.logo:hover {
+    cursor: default;
+}
+
 .section-heading {
     font-size: 2rem;
     color: var(--light-color);
@@ -118,13 +122,17 @@ to the screen, not to the space below the header
     font-size: 600;
 }
 
-nav, .nav-links {
+.hamburger-nav {
+    display: none;
+}
+
+.full-nav, .nav-list {
     list-style: none;
     display: flex;
     gap: 24px;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: inherit;
 }
@@ -132,7 +140,7 @@ a {
 a:hover {
     color: var(--accent-color);
     text-decoration: underline;
-    text-underline-offset: 1.5rem;
+    text-underline-offset: 1.75rem;
 }
 
 .contact-icon-container {
