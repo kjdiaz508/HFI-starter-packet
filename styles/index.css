@@ -1,0 +1,30 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr) 1fr;
+    gap: 16px;
+    grid-template-areas: 
+        "bio bio bio bio bio bio"
+        "exp exp exp exp exp contact"
+        "skills skills skills skills edu edu"
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#experience {
+    justify-content: space-around;
+    grid-area: exp;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#education {
+    grid-area: edu;
+}
+
+#contact {
+    grid-area: contact;
+}

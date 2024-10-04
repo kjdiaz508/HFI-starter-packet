@@ -51,31 +51,6 @@ to the screen, not to the space below the header
     font-size: 600;
 }
 
-#bio {
-    grid-area: bio;
-}
-
-#experience {
-    justify-content: space-around;
-    grid-area: exp;
-}
-
-#skills {
-    grid-area: skills;
-}
-
-#education {
-    grid-area: edu;
-}
-
-#contact {
-    grid-area: contact;
-}
-
-#projects {
-    grid-area: prj;
-}
-
 .contact-icon-container {
     flex-grow: 1;
     display: flex;
