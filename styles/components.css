@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+
+:root {
+    --dark-color: #141428;
+    --darkest-color: #0c0c18;
+    --dark-color-brighter: #1b1b38;
+    --light-color: #e0e0e0;
+    --light-color-darker: #b3b3b3;
+    /*--accent-color: #3b0b78;*/
+    --accent-color: #9d14ff;
+    --glow-color: #6a0dad;
+    --low-contrast: #e0e0e0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select {
+    font: inherit
+}
+
+html {
+    height: 100%;
+    color-scheme: dark;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    min-height: 100%;
+    background-color: #141428;
+    color: var(--light-color-darker);
+    margin: 0;
+}
+
+section {
+    background: linear-gradient(
+        45deg,
+        var(--dark-color),
+        var(--dark-color-brighter)
+    );
+    padding: 1rem;
+    display: flex;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--accent-color);
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: var(--glow-color) 0px 0px 6px;
+}
+
 /*
 need this because I want to center the main content
 to the screen, not to the space below the header
@@ -49,6 +116,23 @@ to the screen, not to the space below the header
 
 .bold {
     font-size: 600;
+}
+
+nav, .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color {
+
+    }
 }
 
 .contact-icon-container {
