@@ -1,0 +1,99 @@
+/*
+need this because I want to center the main content
+to the screen, not to the space below the header
+*/
+.centering-is-hard {
+    display: flex;
+    align-items: center;
+
+    /* making space so the header is not covered.
+    font size * line-height + padding
+    TODO: find a better way..? or make these vars */
+    padding-top: calc(3rem * 1.5 + 40px);
+    padding-bottom: calc(1rem * 1.5 + 40px);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    bottom: auto;
+}
+
+.logo {
+    color: var(--light-color);
+    font-family: "Titillium Web", system-ui, sans-serif;
+    font-weight: 600;
+    /* need this set for the padding calculation
+    on the main content, just to be sure*/
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: var(--light-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subheading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.bold {
+    font-size: 600;
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#experience {
+    justify-content: space-around;
+    grid-area: exp;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#education {
+    grid-area: edu;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#projects {
+    grid-area: prj;
+}
+
+.contact-icon-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon:hover {
+    filter: drop-shadow(0 0 10px var(--glow-color));
+}
+
+#email-icon {
+    fill: #000;
+    stroke: #fff;
+}
+
+#github-icon {
+    /*fill: #24292f*/
+    fill: var(--light-color-darker);
+}

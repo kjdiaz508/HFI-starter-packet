@@ -1,0 +1,69 @@
+/* utility class for responsiveness */
+.container {
+    position: relative;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    z-index: 10;
+}
+
+/*
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  */
+
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* going for single column on smaller screens */
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "bio"
+            "edu"
+            "exp"
+            "skills"
+            "prj"
+            "contact";
+    }
+    .contact-icon-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}
