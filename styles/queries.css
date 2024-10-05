@@ -51,13 +51,6 @@
         justify-content: center;
         gap: 32px;
     }
-}
-
-/* sm */
-@media (max-width: 640px) {
-    .container {
-        max-width: 475px;
-    }
     .full-nav {
         display: none;
     }
@@ -67,6 +60,13 @@
     .centering-is-hard {
         position: relative;
         padding-top: 0;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
     }
 }
 
