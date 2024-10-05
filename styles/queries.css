@@ -44,7 +44,6 @@
             "edu"
             "exp"
             "skills"
-            "prj"
             "contact";
     }
     .contact-icon-container {
@@ -58,6 +57,16 @@
 @media (max-width: 640px) {
     .container {
         max-width: 475px;
+    }
+    .full-nav {
+        display: none;
+    }
+    .hamburger-icon {
+        display: flex;
+    }
+    .centering-is-hard {
+        position: relative;
+        padding-top: 0;
     }
 }
 

@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/background.css">
     <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/queries.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/queries.css">
 </head>
 <body>
     <div>
@@ -21,28 +20,27 @@
         <h1 class="logo">Kevin Diaz</h1>
         <nav class="full-nav">
             <ul class="nav-list text">
-                <li><a class="nav-link" href="blog.html">Blog</a></li>
-                <li><a class="nav-link href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link href="blog.html">Resume</a></li>
-                <li><a class="nav-link href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <nav class="hamburger-nav">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links text">
+                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-    </header>    
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="hamburger-nav">
+        <ul class="hamburger-links text">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <div class="centering-is-hard">
         <main class="container bento-layout">
             <section id="bio">
@@ -112,5 +110,6 @@
             </section>
         </main>
     </div>
+    <script src="scripts/events.js"></script>
 </body>
 </html>
